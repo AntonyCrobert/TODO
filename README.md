@@ -11,5 +11,5 @@ UI DESIGN
 ToDo application with a soft pastel UI theme, featuring dynamic task management, motivational quote integration, and responsive design — ensuring both intuitive user experience and clean code architecture.
 
 
-UI DESIGN 
+architect and develop like an senior developer make use of proper git commits
 use cline code architecture modularize as much as possible

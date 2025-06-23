@@ -6,27 +6,24 @@ Build a full-stack ToDo application using Node.js and TypeScript for the backend
 - Apply a soft pastel color palette for a calm, modern aesthetic.
 - Ensure responsive design for mobile and desktop views.
 - Design intuitive UI with clear buttons for "Add", "Edit", "Delete", "Mark as Completed", and "Filter".
-- Include a section for displaying a motivational quote (static or dynamically fetched).
-- Group similar tasks visually (e.g., by category or status).
 - Use subtle animations/transitions to enhance interactivity.
 
 🧩 Features:
-- Add new tasks.
-- Edit or delete existing tasks.
+- Add new task list.
+- Edit or delete existing task list.
 - Mark tasks as completed.
-- Filter tasks (All, Completed, Pending).
-- Group tasks based on category or tags.
+- Filter task list (All, Completed, Pending).
+- a task list would be considered as completed if all the tasks in it is checked otherwise it will be pending
 
 🛠 Backend:
 - Use Node.js with TypeScript.
 - Apply modular architecture: separate concerns using services, controllers, routes, and models.
-- Store tasks in memory or a local JSON file.
-- Expose RESTful APIs for task management.
+- Store tasks in a local JSON file to persist data.
+- Expose RESTful APIs for the front end to consume.
 
 🧱 Code Practices:
 - Follow SOLID principles.
-- Modularize using Cline code architecture: UI layer, logic layer, data layer.
-- Use meaningful Git commits (e.g., `feat: implement task filter logic`, `style: apply pastel theme`).
+- Modularize using Clean code architecture: UI layer, logic layer, data layer.
 - Write clean, scalable code with maintainable folder structure and comments.
 
 🎯 Outcome:

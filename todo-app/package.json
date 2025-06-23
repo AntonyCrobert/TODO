@@ -1,0 +1,23 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "Full-stack ToDo application with Node.js, TypeScript, and clean architecture",
+  "scripts": {
+    "start:server": "cd server && npm run dev",
+    "start:client": "cd client && npx serve -s",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\""
+  },
+  "keywords": [
+    "todo",
+    "typescript",
+    "node",
+    "express",
+    "clean-architecture"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "serve": "^14.2.0"
+  }
+}

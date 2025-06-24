@@ -224,6 +224,12 @@ header p {
   border-top: 1px solid var(--secondary-color);
 }
 
+.task-input-container {
+  display: flex;
+  flex: 1;
+  gap: 5px;
+}
+
 .new-task-input {
   flex: 1;
   padding: 10px;
@@ -268,6 +274,8 @@ header p {
   gap: 10px;
   flex: 1;
 }
+
+/* Priority Label Styles have been removed */
 
 .task-checkbox {
   width: 18px;
@@ -417,5 +425,13 @@ header p {
   .task-list-actions {
     width: 100%;
     justify-content: flex-end;
+  }
+  
+  .task-input-container {
+    flex-direction: column;
+  }
+  
+  .task-priority-select {
+    width: 100%;
   }
 }

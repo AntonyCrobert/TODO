@@ -119,6 +119,7 @@ class UiService {
     const deleteTaskListBtn = taskListElement.querySelector('.delete-task-list-btn');
     const addTaskForm = taskListElement.querySelector('.add-task-form');
     const newTaskInput = taskListElement.querySelector('.new-task-input');
+    const prioritySelect = taskListElement.querySelector('.task-priority-select');
     const addTaskBtn = taskListElement.querySelector('.add-task-btn');
     
     editTaskListBtn.addEventListener('click', () => {
@@ -194,6 +195,8 @@ class UiService {
       taskContainer.classList.add('completed');
     }
     
+    // Priority labels have been removed
+    
     // Set up event listeners for task actions
     checkbox.addEventListener('change', () => {
       app.toggleTaskCompletion(taskListId, task.id);
@@ -229,6 +232,9 @@ class UiService {
     
     this.modalTitle.textContent = type === 'task-list' ? 'Edit Task List' : 'Edit Task';
     this.editInput.value = currentValue;
+    
+    // Priority dropdown has been removed
+    document.getElementById('edit-priority-container').style.display = 'none';
     
     this.editModal.classList.add('show');
     this.editInput.focus();

@@ -112,7 +112,8 @@ class ApiService {
    * @returns {Promise<object>} - The response data containing the updated task list
    */
   async updateTask(taskListId, taskId, description) {
-    return this.request(`/tasklists/${taskListId}/tasks/${taskId}`, 'PUT', { description });
+    const payload = { description };
+    return this.request(`/tasklists/${taskListId}/tasks/${taskId}`, 'PUT', payload);
   }
 
   /**
